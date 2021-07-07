@@ -1,0 +1,7 @@
+{
+    "name": "CommonFly",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/Terrain2/CommonFly",
+    "description": "A common implementation of a fly mode.",
+    "dependencies": [ "Terrain-SettingsApi-1.1.0" ]
+}
