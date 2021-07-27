@@ -1,13 +1,17 @@
-using System;
 using HarmonyLib;
 using UnityEngine;
-using UnityEngine.Audio;
 
 namespace LibCommonFly
 {
     [HarmonyPatch(typeof(PlayerMovement))]
     class CommonFlyMovement
     {
+        [HarmonyPatch(nameof(PlayerMovement.Awake)), HarmonyPostfix]
+        static void Awake()
+        {
+            CommonFly.flying = false;
+        }
+
         [HarmonyPatch(nameof(PlayerMovement.Movement)), HarmonyPrefix]
         static bool Movement(PlayerMovement __instance, float x, float y)
         {
