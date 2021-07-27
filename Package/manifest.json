@@ -3,5 +3,5 @@
     "version_number": "1.0.1",
     "website_url": "https://github.com/Terrain2/CommonFly",
     "description": "A common implementation of a fly mode.",
-    "dependencies": [ "Terrain-SettingsApi-1.1.0" ]
+    "dependencies": [ "Terrain-SettingsApi-1.1.1" ]
 }
